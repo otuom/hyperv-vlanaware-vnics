@@ -18,7 +18,7 @@ Add-VMNetworkAdapter -ManagementOS -Name "VLAN456" -SwitchName "VLAN-vSwitch" -P
 
 # Finally, verify that all adapter are in place
 Get-NetAdapter
-Get-VMNetworkAdapterVlan -managementos
+Get-VMNetworkAdapterVlan -ManagementOS
 
 Set-VMNetworkAdapterVlan -ManagementOS -VMNetworkAdapterName "VLAN123" -Access -VlanId 123
 Set-VMNetworkAdapterVlan -ManagementOS -VMNetworkAdapterName "VLAN456" -Access -VlanId 456
